@@ -31,7 +31,7 @@ if($_GET['a'] == 'login')
 					$_SESSION['ID'] = $row['id'];
 					$_SESSION['Username'] = $row['username'];
 					echo ('Login Successful');
-					echo('<script>location.replace("message_board.php")</script>');
+					echo('<script>location.replace("messageboard.php")</script>');
 				}
 			}
 		}
@@ -158,6 +158,6 @@ else if($_GET['a']=='messagecompose')
 else if(!isset($_GET['a']))
 {
 	echo '<script>alert("Error occured \nReturning you to the Message Board")</script>';
-	echo '<script>location.replace("message_board.php")</script>';
+	echo '<script>location.replace("messageboard.php")</script>';
 }
 ?>
